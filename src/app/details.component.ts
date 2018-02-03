@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Artist } from './artist.interface';
 
 @Component({
 	selector: 'artist-details',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 	inputs: ['artist']
 })
 
-export class ArtistDetailComponent {}
+export class ArtistDetailComponent {
+	public artist: Artist;
+}

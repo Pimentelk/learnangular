@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { ArtistItemComponent } from './artist.component';
-
-export class Artist {
-	public name: string;
-	public shortname: string;
-	public reknown: string;
-	public bio: string;
-}
+import { Artist } from './artist.interface';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +12,7 @@ export class AppComponent {
 
 	public artists: Artist[];
 	public currentArtist: Artist;
+	public query: string;
 
 	constructor(){
 		this.artists = ARTISTS;
